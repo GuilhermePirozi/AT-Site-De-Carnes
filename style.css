@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+}
+
+nav {
+  text-align: center;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  box-shadow: 0px 6px 6px -6px rgba(255, 0, 0, 1);
+}
+
+.lista1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+  gap: 150px;
+}
+
+#logoCarne {
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.compra {
+  width: 40px;
+  margin-left: 70px;
+}
+
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #FF0000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px 0;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 80px;
+  background-color: #000000;
+  border: 2px solid #FF0000;
+  border-radius: 5%;
+  color: #FFFFFF;
+}
+
+nav ul li ul li {
+  width: 120px;
+  padding: 10px;
+  float: none;
+  position: relative;
+}
+
+nav ul li:hover>ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.cortes:hover {
+  color: #FF0000;
+}
+
+.cortes:visited {
+  color: #FFFFFF;
+}
+
+main {
+  margin-top: 100px;
+}
+
+#iniciacao {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url(img/fundoNovo.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#benVindo {
+  background-color: rgba(0, 0, 0, .3);
+  margin-top: -60px;
+  padding: 15px;
+  padding-right: 35px;
+}
+
+.letra1Ben {
+  color: #FFFFFF;
+  font-size: 150px;
+
+}
+
+.letra2Ben {
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+#h2 {
+  display: flex;
+  align-items: center;
+}
+
+#menuRapidoPai {
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  color: #000000;
+  scroll-margin-top: 110px;
+}
+
+.menuRapido {
+  display: flex;
+  gap: 80px;
+  margin-top: 60px;
+}
+
+.itensMenuCar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.itensMenuCar h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+  color: #FF0000;
+}
+
+.ulMenu {
+  list-style: none;
+  padding: 0;
+}
+
+.ulMenu li {
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.linhaCar {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #F44336;
+  color: #FFFFFF;
+}
+
+.cortesCarnesPai {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
+  width: 100%;
+}
+
+.tituloCarnes {
+  display: flex;
+  margin-top: 140px;
+}
+
+.tituloCarnes img {
+  width: 70px;
+  height: 45px;
+  margin-top: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.tituloCarnes h1 {
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #F44336;
+  color: #FFFFFF;
+  font-size: 50px;
+}
+
+.cortesCarnes {
+  display: flex;
+  gap: 50px;
+  margin-top: 90px;
+}
+
+.itensCarnes {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 500px;
+  width: 250px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itensCarnes button {
+  border: 1px solid #F03A1B;
+  border-radius: 48px;
+  color: white;
+  background-color: red;
+  width: 170px;
+  height: 55px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.itensCarnes img {
+  width: 240px;
+  height: 180px;
+  border-radius: 5%;
+  margin-top: 8px;
+}
+
+.itensCarnes h3 {
+  font-size: 28px;
+}
+
+.precoCarnes {
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.descricaoCarnes {
+  height: 150px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+#infoSobre {
+  width: 100%;
+  height: 666px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin-top: 160px;
+  scroll-margin-top: 110px;
+}
+
+.sobreText {
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 160px;
+  margin-right: 210px;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: 500;
+}
+
+#imageSobre img {
+  width: 600px;
+  border-radius: 5px;
+  align-items: center;
+  margin-left: 220px;
+}
+
+.sobreText h2 {
+  margin-bottom: 20px;
+  color: #FF0000;
+}
+
+#linksPai {
+  width: 100%;
+  height: 100px;
+  background-color: #FF0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links1 {
+  word-spacing: 200px;
+}
+
+.logo {
+  width: 60px;
+}
+
+#finalLocaPai {
+  height: 40vh;
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+.mapaBov h3 {
+  color: #FFFFFF;
+  border-bottom: solid 3px #FF0000;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.contFoot {
+  color: #FFFFFF;
+}
+
+.contFoot h3 {
+  border-bottom: solid 3px #FF0000;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.pagFoot {
+  width: 280px;
+  height: 50px;
+}
+
+.pagFoot ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.pagFoot li img {
+  margin-right: 5px;
+}
+
+.pagFoot h3 {
+  border-bottom: solid 3px #FF0000;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.mastercard {
+  width: 42px;
+  height: 29px;
+  margin-top: 5px;
+}
+
+.visa {
+  width: 42px;
+  height: 40px;
+}
+
+.bitcoin {
+  width: 35px;
+  height: 35px;
+  margin-top: 3px;
+}
+
+
+.pix {
+  width: 42px;
+  height: 29px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.selo1 {
+  width: 60px;
+}
+
+.faleFoot h3 {
+  border-bottom: solid 3px #FF0000;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.faleFoot form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#submit {
+  width: 55px;
+  border-radius: 48px;
+}
+
+.finalLiteral {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+}
+
+.finalLiteral p {
+  font-size: 12px;
+}
+
+form input {
+  border-radius: 8px;
+}
+
+form textarea {
+  border-radius: 8px;
+}
+
+#partIni {
+  scroll-margin-top: 110px;
+}
